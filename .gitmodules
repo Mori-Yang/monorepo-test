@@ -1,0 +1,3 @@
+[submodule "packages/mori-components"]
+	path = packages/mori-components
+	url = https://github.com/Mori-Young/mori-components.git
