@@ -5,6 +5,8 @@
     -   需要打包对应的`.d.ts`, vite 使用`vite-plugin-dts`; 打包的入口文件，例如 mori-components(组件库) 的 `src/index.ts` 作为入口;
     -   `package.json` 文件中声明 `"types": "<打包后的入口.d.ts>"`;
 
+需要打包的原因：例如这里的 mori-components 使用了 tailwindcss，作为一种 postCSS，如果根项目没有安装 tailwindcss，那么组件将无样式
+
 ```ts
 // vite.config.ts
 import { defineConfig, ConfigEnv } from "vite";
@@ -60,3 +62,7 @@ git submodule update --init --remote --recursive
 # 安装依赖 这里会将 mori-components 安装
 pnpm install
 ```
+
+# workspace protocol
+
+https://pnpm.io/workspaces#workspace-protocol-workspace
