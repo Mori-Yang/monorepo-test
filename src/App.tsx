@@ -1,5 +1,6 @@
 import { BlogCard } from "mori-components";
 import "./index.less";
+// test
 const App = () => {
     return (
         <div className="mt-4">
